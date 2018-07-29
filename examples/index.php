@@ -21,7 +21,7 @@ try {
     $result = $jq->from('users')
         ->where('visits.year', '=', 2010)
         ->sum('visits.year');
-    dump($result);
+    var_dump($result);
 } catch (\Nahid\JsonQ\Exceptions\ConditionNotAllowedException $e) {
 
 } catch (\Nahid\JsonQ\Exceptions\NullValueException $e) {
